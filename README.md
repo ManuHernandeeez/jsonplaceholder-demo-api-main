@@ -35,6 +35,3 @@ npm install react-router-dom styled-components
 
 # 4. Ejecuta el proyecto
 npm run dev
-
-
-a
