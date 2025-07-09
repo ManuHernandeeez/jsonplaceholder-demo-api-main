@@ -35,3 +35,7 @@ npm install react-router-dom styled-components
 
 # 4. Ejecuta el proyecto
 npm run dev
+
+# Integrantes 
+##Julio Cesar Canton Rivas
+##Manuel Alexander Hernandez Moreno

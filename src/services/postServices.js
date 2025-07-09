@@ -2,6 +2,21 @@ import axios from "axios";
 
 //aqui se colocara las peticiones de la api (solo logica)
 
+//metodo para mostrar solamente usuarios
+const getUsers = async () => {
+    try{
+        //colocar la peticion HTTP (get, post, put, patch, delete)
+        const response = await axios.get("https://jsonplaceholder.typicode.com/users")
+        //la respuesta ya se convierte en un json
+        console.log(response); //estado de la peticion
+        return response.data; //data => representa la informacion del endpoint
+    }catch(error){
+        console.error("error al obtener los datos", error);
+    }
+}
+
+
+
 //metodo que me devuelva los posts de la api
 const getPosts = async () => {
     try{
@@ -49,7 +64,7 @@ const updatePost = async (data_post, id_post) => {
     }
 }
 
-export { getPosts, createPost, getPostById, updatePost }
+export { getPosts, createPost, getPostById, updatePost, getUsers };
 
 // const obtenerPublicaciones = async () => {
 //     try{
